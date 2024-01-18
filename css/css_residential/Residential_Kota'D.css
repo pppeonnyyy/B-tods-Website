@@ -1,0 +1,178 @@
+/*--section one---*/
+.img-back{
+    width: 100%;
+    height: 790px;
+    opacity: 0.5;
+    position: absolute;
+    overflow: hidden;
+}
+.img-back img{
+    width: 120%;
+    height: 790px;
+    object-fit: cover;
+    object-position: 0 20%;
+}
+/*--sec two end---*/
+/*--sec three--*/
+.picture{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px;
+    justify-content: space-between;
+}
+.picture img{
+    margin: 50px 0;
+}
+.picture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/*--sec three end--*/
+/*--prev proj--*/
+#arrow-prev a{
+    position: absolute;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-left: 15%;
+    margin-top: 20%;
+}
+.circle-downprev{
+    width: 120%;
+    position: absolute;
+    margin-left:-220%;
+    margin-top: -37%;
+}
+.arrowprev{
+    width: auto;
+    height: 160px;
+    position: absolute;
+    transform: rotate(90deg);
+    margin-left: -80%;
+    margin-top: -60%;
+}
+/*--next proj---*/
+#arrow-next a{
+    position: absolute;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-left: 80%;
+    margin-top: 20%;
+}
+.circle-down{
+    width: 140%;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: -35%;
+}
+.arrow{
+    width: auto;
+    height: 160px;
+    position: absolute;
+    transform: rotate(-90deg);
+    margin-top: -70%;
+}
+.wrap{
+  width: 100%;height: auto;
+}
+.wrap img{
+    width: 100%;
+    height: 450px;
+    margin-bottom: -15px;
+    object-fit: cover;
+    object-position: 0 60%;
+}
+@media only screen and (max-width:1064px){
+    .picture{
+        margin: 0px;
+    }
+    /*--section slide 1063px---*/
+}
+    /*---section slide 1063px end----*/
+@media only screen and (max-width: 768px){
+    /*--back img 768px---*/
+    .img-back{
+        height: 790px;
+    }
+    .img-back img{
+        width: 100%;
+        height: 800px;
+        object-position:100%;
+    }
+    /*---back img 768px end---*/
+    /*-- sec three pic 768px---*/
+    .picture{
+        margin: 0px;
+    }
+    /*---previous project 768px---*/
+    #arrow-prev a{
+        font-size: 15px;
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+    /*---previous project 768px end---*/
+    /*---next project 768px---*/
+    #arrow-next a{
+        font-size: 15px;
+        margin-top: 10%;
+        margin-left: 65%;
+    }
+    .arrow{
+        margin-top: -70%;
+    }
+    .circle-down{
+        margin-top: -40%;
+    }
+    /*---next project 768px end---*/
+    /*---next pro 768px---*/
+    .wrap{
+        padding-top: 0%;
+    }
+    .wrap img{
+        height: 200px;
+    }
+    }
+@media only screen and (max-width:500px){
+    .arrow,.arrowprev{
+        height: 130%;
+    }
+    .arrow{
+        margin-left: -30%;
+        margin-top: -35%;
+    }
+    .arrowprev{
+        margin-left:-40%;
+        margin-top: -30%;
+    }
+    .circle-down,.circle-downprev{
+        display:none;
+    }
+    #arrow-next a, #arrow-prev a{
+        margin-top: 20%;
+        font-size: 10px;
+    }
+    #arrow-next a{
+        margin-left: 80%;
+    }
+    #arrow-prev a{
+        margin-left: 10%;
+    }
+}
+@media only screen and (max-width:425px){
+    .picture img{
+        margin: 50px 0;
+        height: auto;
+    }
+    .picture img{
+        width: 100%;
+        margin: 0;
+    }
+    /*---slide 425px end---*/
+}

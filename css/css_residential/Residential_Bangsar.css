@@ -1,0 +1,210 @@
+/*--section one---*/
+.img-back{
+    width: 100%;
+    height: 790px;
+    opacity: 0.5;
+    position: absolute;
+    overflow: hidden;
+}
+.img-back img{
+    width: 120%;
+    height: 790px;
+    object-fit: cover;
+    object-position: 0 20%;
+}
+/*--sec two end---*/
+/*--sec three--*/
+.picture{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px;
+    justify-content: space-between;
+}
+.picture img{
+    margin: 50px 0;
+     width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/*--sec three end--*/
+/*---side picture slide---*/
+.mySlides {
+    display: flex;
+    justify-content: flex-end;
+}
+.mySlides img {
+        width:400px;
+        height: 600px;
+        object-fit: cover;
+padding-right: 100px;
+}
+/* Slideshow container */
+/*--prev proj--*/
+#arrow-prev a{
+    position: absolute;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-left: 18%;
+    margin-top: 19%;
+}
+.circle-downprev{
+    width: 150%;
+    position: absolute;
+    margin-left:-250%;
+    margin-top: -50%;
+}
+.arrowprev{
+    width: auto;
+    height: 160px;
+    position: absolute;
+    transform: rotate(90deg);
+    margin-left: -80%;
+    margin-top: -75%;
+}
+/*--next proj---*/
+#arrow-next a{
+    position: absolute;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-left: 70%;
+    margin-top: 19%;
+}
+.circle-down{
+    width: 120%;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: -40%;
+}
+.arrow{
+    width: auto;
+    height: 160px;
+    position: absolute;
+    transform: rotate(-90deg);
+    margin-top: -60%;
+}
+.wrap{
+  width: 100%;
+height: auto;
+}
+.wrap img{
+    width: 100%;
+    height: 450px;
+    margin-bottom: -15px;
+    object-fit: cover;
+    object-position: 0 60%;
+}
+@media only screen and (max-width:1064px){
+    .picture{
+        margin: 0px;
+    }
+    /*--section slide 1063px---*/
+}
+    /*---section slide 1063px end----*/
+@media only screen and (max-width: 768px){
+    /*--back img 768px---*/
+    .img-back{
+        height: 790px;
+    }
+    .img-back img{
+        width: 100%;
+        height: 800px;
+        object-position:100%;
+    }
+    /*---back img 768px end---*/
+    /*-- sec three pic 768px---*/
+    .picture{
+        margin: 0px;
+    }
+    /*---slide pic 768px--*/
+    .slideshow-container{
+        justify-content: center;
+    }
+    .mySlides img{
+    width: 100%;
+        height: 580px;
+        margin-top: 8%;
+        margin-left: 0%;
+    }
+    .prev{
+        margin-top: 0px;
+        left: 15%;
+    }
+    .next{
+        margin-top: 0px;
+        margin-left: 64%;
+        left: 0%
+    }
+    .prev, .next{
+        width: 20%;
+    }
+    /*---slide pic 768px end--*/
+    /*---previous project 768px---*/
+    #arrow-prev a{
+        font-size: 15px;
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+    /*---previous project 768px end---*/
+    /*---next project 768px---*/
+    #arrow-next a{
+        font-size: 15px;
+        margin-top: 10%;
+    }
+    .arrow{
+        margin-top: -50%;
+    }
+    .circle-down{
+        margin-top: -30%;
+    }
+    /*---next project 768px end---*/
+    /*---next pro 768px---*/
+    .wrap{
+        padding-top: 0%;
+    }
+    .wrap img{
+        height: 200px;
+    }
+    }
+@media only screen and (max-width:500px){
+    .arrow,.arrowprev{
+        height: 130%;
+    }
+    .arrow{
+        margin-left: -30%;
+        margin-top: -25%;
+    }
+    .arrowprev{
+        margin-left:-40%;
+        margin-top: -35%;
+    }
+    .circle-down,.circle-downprev{
+        display:none;
+    }
+    #arrow-next a, #arrow-prev a{
+        margin-top: 20%;
+        font-size: 10px;
+    }
+    #arrow-next a{
+        margin-left: 80%;
+    }
+    #arrow-prev a{
+        margin-left: 10%;
+    }
+}
+@media only screen and (max-width:425px){
+    .picture img{
+        margin: 50px 0;
+        height: auto;
+    }
+    /*---slide 425px end---*/
+    .img-back{
+        height: 100%
+    }
+}
