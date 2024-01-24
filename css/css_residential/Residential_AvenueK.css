@@ -42,10 +42,10 @@
     margin-top: 20%;
 }
 .circle-downprev{
-    width: 150%;
+    width: 140%;
     position: absolute;
     margin-left:-250%;
-    margin-top: -50%;
+    margin-top: -40%;
 }
 .arrowprev{
     width: auto;
@@ -67,10 +67,10 @@
     margin-top: 20%;
 }
 .circle-down{
-    width: 160%;
+    width: 140%;
     position: absolute;
-    margin-left: 40%;
-    margin-top: -60%;
+    margin-left: 50%;
+    margin-top: -40%;
 }
 .arrow{
     width: auto;
